@@ -3,14 +3,37 @@ guid: f15992710b39b514f90c03897170289b
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
-  fontSize: 16
-  forceTextureCase: -2
+  fontSize: 20
+  forceTextureCase: -1
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
   fontNames:
   - Roboto
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2a29e27936eb547458f646f71125b264, type: 3}
+  - {fileID: 12800000, guid: fde446a96275f3a458d29aedfdbeedb2, type: 3}
+  - {fileID: 12800000, guid: b2ea3b3f1765e544b9eb5bd1a93a91ce, type: 3}
+  - {fileID: 12800000, guid: dfb97a9307a577a41bcacba34b9a7e32, type: 3}
+  - {fileID: 12800000, guid: 72889309a8002014ea2be5f6b29b1984, type: 3}
+  - {fileID: 12800000, guid: 3fc3dd3d44d41a74f83f63583bf5715a, type: 3}
+  - {fileID: 12800000, guid: a51a3aebb43ac044989270407476b208, type: 3}
+  - {fileID: 12800000, guid: 9af54f7d3c3ad6640ad30f327ee5d0ae, type: 3}
+  - {fileID: 12800000, guid: 3750c318f40cab44a97d3a81beaefeb3, type: 3}
+  - {fileID: 12800000, guid: 0c8a327ad8c5e914ea6ae88f681fcc80, type: 3}
+  - {fileID: 12800000, guid: f6d88d233a0d32848bf39215a773a0fb, type: 3}
+  - {fileID: 12800000, guid: f95147a9bab9fe649b8070170fa7ebd2, type: 3}
+  - {fileID: 12800000, guid: 30dc370b164eefc43b95744fc796dad0, type: 3}
+  - {fileID: 12800000, guid: c839255fc8f6b4b4d90bf8c1af9f9bd1, type: 3}
+  - {fileID: 12800000, guid: 2b69b1c048bf5aa498b5640bd284efac, type: 3}
+  - {fileID: 12800000, guid: 19a9abb883540be48b75b951a927ae03, type: 3}
+  - {fileID: 12800000, guid: 5e63515167650a541b309ba3bfd4db3d, type: 3}
+  - {fileID: 12800000, guid: 60a7994e9e7e86047a91b62cfd2fbb54, type: 3}
+  - {fileID: 12800000, guid: 7e0399a519f58664ba9ea9f55efddfeb, type: 3}
+  - {fileID: 12800000, guid: c6a583b856f49df4dba1d613f486e878, type: 3}
+  - {fileID: 12800000, guid: fe67673c57896b64d8d71a86f8a20eed, type: 3}
+  - {fileID: 12800000, guid: 1062c701058745940ae5dca6219c64c8, type: 3}
+  - {fileID: 12800000, guid: d93c1bc57fdf1ac4dad1bf04fac05464, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
