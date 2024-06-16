@@ -182,7 +182,7 @@ namespace MobileCityBuilder
             {
                 BuildingData currentBuilding = save.buildings[i];
                 GameObject obj = Instantiate(structureArray[(int)currentBuilding.buildingType]);
-                if(currentBuilding.buildingType != BuildingType.road)
+                if(currentBuilding.buildingType != BuildingType.Road)
                 {
                     Building structure = obj.GetComponent<Building>();
                     structure.nextUpdate = currentBuilding.Level;

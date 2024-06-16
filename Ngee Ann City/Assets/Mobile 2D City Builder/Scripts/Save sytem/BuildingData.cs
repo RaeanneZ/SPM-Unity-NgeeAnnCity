@@ -16,10 +16,10 @@ namespace MobileCityBuilder
     [System.Serializable]
     public enum BuildingType
     {
-        house,
-        house2,
-        factory,
-        powerStation,
-        road
+        House,
+        Park,
+        Commercial,
+        Industry,
+        Road
     }
 }
