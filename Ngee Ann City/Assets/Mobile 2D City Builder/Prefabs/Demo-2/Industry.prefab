@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildingState: 0
-  buildingType: 1
+  buildingType: 3
   buildingData:
     buildingType: 0
     position: {x: 0, y: 0, z: 0}

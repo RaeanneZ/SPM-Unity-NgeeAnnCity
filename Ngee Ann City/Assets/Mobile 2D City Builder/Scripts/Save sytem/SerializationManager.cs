@@ -15,7 +15,7 @@ namespace MobileCityBuilder
         {
             var path = Application.persistentDataPath + SaveDirectory;
 
-            if(!Directory.Exists(path))
+            if (!Directory.Exists(path))
             {
                 Directory.CreateDirectory(path);
             }
@@ -34,7 +34,7 @@ namespace MobileCityBuilder
             string FullPath = Application.persistentDataPath + SaveDirectory + FileName;
             SaveData tempData = new SaveData();
 
-            if(File.Exists(FullPath))
+            if (File.Exists(FullPath))
             {
                 string json = File.ReadAllText(FullPath);
                 tempData = JsonUtility.FromJson<SaveData>(json);
@@ -43,7 +43,7 @@ namespace MobileCityBuilder
             {
                 Debug.LogError("Save file does not exist!");
             }
-            
+
             return tempData;
         }
     }

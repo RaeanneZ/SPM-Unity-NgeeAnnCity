@@ -178,11 +178,11 @@ namespace MobileCityBuilder
         {
             save = SerializationManager.Load();
 
-            for(int i = 0; i < save.buildings.Count; i++)
+            for (int i = 0; i < save.buildings.Count; i++)
             {
                 BuildingData currentBuilding = save.buildings[i];
                 GameObject obj = Instantiate(structureArray[(int)currentBuilding.buildingType]);
-                if(currentBuilding.buildingType != BuildingType.Road)
+                if (currentBuilding.buildingType != BuildingType.Road)
                 {
                     Building structure = obj.GetComponent<Building>();
                     structure.nextUpdate = currentBuilding.Level;
