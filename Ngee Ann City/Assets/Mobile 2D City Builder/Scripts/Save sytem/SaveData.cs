@@ -8,5 +8,6 @@ namespace MobileCityBuilder
     public class SaveData
     {
         public List<BuildingData> buildings = new List<BuildingData>();
+        public Player player = new Player(16);
     }
 }

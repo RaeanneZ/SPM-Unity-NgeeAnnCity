@@ -175,10 +175,7 @@ MonoBehaviour:
   arrows: {fileID: 2441819130068165685}
   updatePanel: {fileID: 6976207481393783839}
   tile: {fileID: 2425712912158585986}
-  updates:
-  - updateLevelSprite: {fileID: 21300000, guid: f7181cf6c4b65d342afaefbfeff8870c, type: 3}
-  - updateLevelSprite: {fileID: 21300000, guid: 7f5a00b9dfc4c4c4f8d98ac97f083c5d, type: 3}
-  - updateLevelSprite: {fileID: 21300000, guid: 17632593c440e5047a1525e9e35df21d, type: 3}
+  updates: []
   nextUpdate: 0
 --- !u!114 &1375114047012903434
 MonoBehaviour:

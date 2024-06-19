@@ -185,7 +185,6 @@ namespace MobileCityBuilder
                 if (currentBuilding.buildingType != BuildingType.Road)
                 {
                     Building structure = obj.GetComponent<Building>();
-                    structure.nextUpdate = currentBuilding.Level;
                 }
                 obj.transform.position = currentBuilding.position;
                 obj.transform.rotation = currentBuilding.rotation;

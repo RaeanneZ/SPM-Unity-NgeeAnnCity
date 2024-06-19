@@ -28,7 +28,6 @@ namespace MobileCityBuilder
         public Button yesButton;
         public GameObject yesNoPanel;
         public GameObject arrows;
-        public GameObject updatePanel;
 
         [Header("Scripts")]
         private GameManager gameManager;
@@ -62,7 +61,6 @@ namespace MobileCityBuilder
             {
                 yesNoPanel.SetActive(false);
                 arrows.SetActive(false);
-                updatePanel.SetActive(false);
                 slayers.number = -0.2f;
                 tile.stayingState = true;
             }
@@ -70,7 +68,6 @@ namespace MobileCityBuilder
             {
                 yesNoPanel.SetActive(true);
                 arrows.SetActive(true);
-                updatePanel.SetActive(false);
                 slayers.number = 0.2f;
                 tile.stayingState = false;
 
@@ -83,27 +80,11 @@ namespace MobileCityBuilder
                     yesButton.interactable = true;
                 }
             }
-            if(buildingState == BuildingState.updating)
-            {
-                yesNoPanel.SetActive(false);
-                arrows.SetActive(false);
-                if(nextUpdate+1 != updates.Length)
-                {
-                    updatePanel.SetActive(true);
-                }
-                else
-                {
-                    updatePanel.SetActive(false);
-                }
-                
-                slayers.number = 0.2f;
-                tile.stayingState = true;
-            }
+
             if(buildingState == BuildingState.firstStart)
             {
                 yesNoPanel.SetActive(true);
                 arrows.SetActive(true);
-                updatePanel.SetActive(false);
                 slayers.number = 0.2f;
                 tile.stayingState = false;
             }
@@ -111,7 +92,6 @@ namespace MobileCityBuilder
             {
                 yesNoPanel.SetActive(true);
                 arrows.SetActive(false);
-                updatePanel.SetActive(false);
                 slayers.number = 0.2f;
                 tile.stayingState = true;
             }
@@ -119,9 +99,6 @@ namespace MobileCityBuilder
             {
                 buildingState = BuildingState.staying;
             }
-
-            spriteRenderer.sprite = updates[nextUpdate].updateLevelSprite;
-
         }
 
         void OnMouseDown()
@@ -170,19 +147,6 @@ namespace MobileCityBuilder
             Vector3 mousePosition = Input.mousePosition;
             mousePosition.z = zCordinateOfMouse;
             return Camera.main.ScreenToWorldPoint(mousePosition);
-        }
-
-        public void UpdateButton()
-        {
-            nextUpdate++;
-            buildingState = BuildingState.staying;
-            gameManager.selectedBuilding = null;
-            gameManager.buildingSelected = false;
-
-            int numberInArray1 = NumberOfElementFromSaveArray();
-            
-            gameManager.save.buildings[numberInArray1].Level = nextUpdate;
-            gameManager.OnSave();
         }
 
         public void YesButton()
