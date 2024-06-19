@@ -41,7 +41,7 @@ namespace MobileCityBuilder
             }
             else
             {
-                Debug.LogError("Save file does not exist!");
+                //Debug.LogError("Save file does not exist!");
             }
 
             return tempData;
