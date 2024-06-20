@@ -101,6 +101,7 @@ namespace MobileCityBuilder
             }
         }
 
+        // This is to pan camera around
         void OnMouseDown()
         {
             zCordinateOfMouse = Camera.main.WorldToScreenPoint(transform.position).z;

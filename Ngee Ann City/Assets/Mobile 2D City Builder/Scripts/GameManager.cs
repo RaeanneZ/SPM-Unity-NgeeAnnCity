@@ -172,6 +172,9 @@ namespace MobileCityBuilder
         public void OnSave()
         {
             SerializationManager.Save(save);
+
+            // Saving player coins, turns and points 
+            PlayerPrefs.SetInt("CurrentPoints", );
         }
 
         public void OnLoad()

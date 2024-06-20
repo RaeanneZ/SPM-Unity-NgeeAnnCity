@@ -11,5 +11,18 @@ public class StatusUI : MonoBehaviour
     public TextMeshProUGUI coinText;
     public TextMeshProUGUI turnText;
 
+    public void SetPointText(int newPoint)
+    {
+        pointText.text = newPoint.ToString();
+    }
 
+    public void SetCoinText(int newCoin)
+    {
+        coinText.text = newCoin.ToString();
+    }
+
+    public void SetTurnText(int newTurn)
+    {
+        pointText.text = newTurn.ToString();
+    }
 }
